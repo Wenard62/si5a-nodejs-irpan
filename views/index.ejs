@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1> HOME</h1>
+    <p>ini halaman home</p>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/prodi">Prodi</a></li>
+    </ul>
+    <p>Ini Halaman Home</p>
+
+    <h4>Berita Terkini</h4>
+    <% berita.forEach(data => { %>
+        <h5><%= data.judul %></h5>
+        <p><%= data.isi %></p>
+    <% }) %>
+</body>
+</html>

@@ -1,14 +1,7 @@
 {
-  "name": "si5a-nodejs-irpan",
-  "version": "1.0.0",
-  "description": "belajar membuat project nodejs irpan",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "nodejs-irpan"
-  ],
-  "author": "Irpan Hakim",
-  "license": "ISC"
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-ejs-layouts": "^2.5.1"
+  }
 }

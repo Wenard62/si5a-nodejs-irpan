@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #000000;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #ffffff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    </style>
+</head>
+<body>
+    <h1> PROGRAM STUDI</h1>
+    <p>Halaman Prodi</p>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <h4>Program Studi MDP</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Prodi</th>
+                    <th>Fakultas</th>
+                    <th>Singkatan</th>
+                </tr>
+            </thead>
+            <% prodi.forEach(data => { %>
+            <tbody>
+            <tr>
+                <td><p><%= data.prodi %></p></td>
+                <td><p><%= data.fakultas %></p></td>
+                <td><p><%= data.singkatan %></p></td>
+            </tr>
+        <% }) %>           
+        </tbody>
+    </table>
+</body>
+</html>
